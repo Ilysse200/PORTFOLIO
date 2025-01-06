@@ -1,0 +1,121 @@
+/* Application of CSS */
+body {
+    font-family:DM Serif Display;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Menu container */
+.menu-container {
+    /* width: 200px; */
+    background-color: #FFA500; /* Orange background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 40px;
+    gap: 10px;
+    /*box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);*/
+    height: 430px;
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 18px;
+}
+.menu-profile {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 6px;
+    padding-right: 0%;
+    margin-left: -5px;
+}
+
+/* Profile section */
+.menu-profile img {
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    border-style:inherit;
+    margin-bottom: 10px;
+    padding-top: 12px;
+}
+
+.menu-profile h2 {
+    display: inline;
+    padding-right: 0px;
+    font-size: 14px;
+    margin: 0;
+    /* text-align: top right; */
+    line-height: 15px;
+    padding-top: 42px;
+    /*height: -5px;*/
+    /*padding-bottom: 25px;*/
+}
+
+.menu {
+    align-items: right;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.menu li {
+    margin: 4px 0;
+    line-height: 35px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    /* padding: 10px; */
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #FF8C00; /* Darker orange */
+    color: white;
+    padding-left: 4px;
+}
+
+.middle-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #F5F5F5; /* Light gray background */
+    gap: 10px;
+    height: 430px;
+    margin-left: 15px;
+    margin-top: 43px;
+    margin-bottom: 40px;
+    border-radius: 18px;
+    padding-bottom: 75px;
+    padding-left: 30px;
+    padding-right: 50px;
+    border: 1px solid #1b1a1a;
+
+}
+
+.middle-content h1 {
+    padding-bottom: -4px;
+    padding-top: 40px;
+    align-items: left;
+    font-size: 36px;
+    font-weight: bolder;
+
+}
+.middle-content p{
+    padding-top: 0px;
+    margin-top: -15px;
+
+}
+
