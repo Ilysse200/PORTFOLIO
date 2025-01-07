@@ -5,7 +5,15 @@
             <link rel="stylesheet" href="styles.css">
         </head>
         <body>
-            <div class="menu-container">
+            <header>
+                <div class="header-container">
+                    <span class="menu-icon" onclick="toggleMenu()">☰</span> <!-- 3-dotted icon -->
+                    <h1>My Portfolio</h1>
+                </div>
+            </header>
+
+
+            <div id="menu" class="menu-container">
                 <div class="menu-profile">
                     <img src="Assets/profile.png" alt="Profile Picture">
                     <h2>Wanda Guela</h2>
@@ -25,8 +33,20 @@
                         growth mindset and a drive for continuous improvement, I am committed to</br>
                         building impactful and innovative software solutions.</p>
                 </div>
+                <div class="divider">
+                    <hr><!-- Divider between About and the next section -->
+                </div> 
+                <div class="skills">
+                    <h1>Skills</h1>
+                    <div class="skills-details">
+                        <p>Figma, Python, HTML, CSS, Java</p>
+                    </div>
+                </div>
+                
 
             </div>
-            
+
+
+            <script src="header.js"></script> 
         </body>
     </html>

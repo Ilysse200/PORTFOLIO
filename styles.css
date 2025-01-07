@@ -1,4 +1,35 @@
 /* Application of CSS */
+/* Header Styling */
+header {
+    position:fixed;
+    width: 100%;
+    height: 25px;
+    background-color: #aca9a5; /* Orange background */
+    color: white; /* White text color */
+    /* padding: 25px 20px; */
+    padding-top: 40px;
+    padding-bottom: 5px;
+    padding-left: 28px;
+    display: inline-flex;
+    /* flex-direction: row; */
+    /* flex-direction: row; */
+    align-items: center; /* Center title and icon vertically */
+    /* justify-content: space-between;  Space between icon and title */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+}
+
+.header-container h1 {
+    margin-top: 0px;
+    /* position: top; */
+    margin-left: 150px;
+    font-size: 20px;
+    padding-top: 0 px;
+    align-items: right;
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+
+/*Body Styling */
 body {
     font-family:DM Serif Display;
     margin: 0;
@@ -6,10 +37,17 @@ body {
     display: flex;
     height: 100vh;
 }
+.menu-icon {
+    padding-top: 100%;
+    font-size: 24px;
+    cursor: pointer;
+}
 
 /* Menu container */
 .menu-container {
     /* width: 200px; */
+    position: fixed;
+    left: -280px;
     background-color: #FFA500; /* Orange background */
     color: white;
     display: flex;
@@ -20,10 +58,19 @@ body {
     /*box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);*/
     height: 430px;
     margin-left: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     border-radius: 18px;
+    padding-top: 60px;
+    /* top: 0; */
+    transition: left 0.3s ease; /* Smooth slide-in effect */
 }
+
+/* When Menu is Open */
+.menu-container.open {
+    left: 0; /* Slide the menu into view */
+}
+
 .menu-profile {
     display: flex;
     flex-direction: row;
@@ -94,20 +141,20 @@ body {
     background-color: #F5F5F5; /* Light gray background */
     gap: 10px;
     height: 430px;
-    margin-left: 15px;
-    margin-top: 43px;
+    margin-left: 270px;
+    margin-top: 83px;
     margin-bottom: 40px;
     border-radius: 18px;
-    padding-bottom: 75px;
+    padding-bottom: 35px;
     padding-left: 30px;
-    padding-right: 50px;
+    padding-right: 30px;
     border: 1px solid #1b1a1a;
 
 }
 
 .middle-content h1 {
     padding-bottom: -4px;
-    padding-top: 40px;
+    padding-top: 20px;
     align-items: left;
     font-size: 36px;
     font-weight: bolder;
@@ -117,5 +164,19 @@ body {
     padding-top: 0px;
     margin-top: -15px;
 
+}
+.middle-content divider {
+    border: none; /* Remove default border styling */
+    border-top: 2px solid hsl(254, 54%, 29%); /* Solid light gray line */
+    margin: 20px 0; /* Add spacing above and below the line */
+    width: 100%; /* Ensure it spans the full width of the container */
+    margin-bottom: 0%;
+    
+}
+.middle-content skills { 
+    display: block;
+    height:-2px;
+    margin-top: -10px;
+    padding-top: -30px;
 }
 
