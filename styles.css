@@ -85,9 +85,9 @@ body {
 /* Profile section */
 .menu-profile img {
     width: 50px;
-    height: 70px;
+    height: 60px;
     object-fit: cover; /* Ensure the image doesn't stretch or distort */
-    border-radius: 50%;
+    border-radius: 10px;
     /* border-style:inherit; */
     /* margin-bottom: 10px; */
     padding-top: 12px;
