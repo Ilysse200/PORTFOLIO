@@ -1,4 +1,15 @@
 /* Application of CSS */
+
+/*Body Styling */
+html,body {
+    font-family:DM Serif Display;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    width: fit-content;
+    flex-direction: column;
+}
 /* Header Styling */
 header {
     position:fixed;
@@ -29,14 +40,6 @@ header {
     padding-bottom: 35px;
 }
 
-/*Body Styling */
-html,body {
-    font-family:DM Serif Display;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-}
 .menu-icon {
     padding-top: 100%;
     font-size: 24px;
@@ -141,6 +144,8 @@ html,body {
     flex-direction: column;
     align-items: left;
     background-color: #F5F5F5; /* Light gray background */
+    flex: 1; /* This allows the middle-content to grow and take available space */
+    margin-left: 270px;
     gap: 10px;
     height: 400px;
     margin-left: 270px;
@@ -165,6 +170,7 @@ html,body {
 .middle-content p{
     padding-top: 0px;
     margin-top: -15px;
+    /* flex: 1; */
 
 }
 /* .divider {
@@ -189,14 +195,22 @@ html,body {
 
 /* Footer Styling */
 footer {
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #aca9a5; /* Light gray background */
     /* position:absolute; */
     color: #000; /* Text color */
     text-align: center; /* Center align the text */
-    padding: 10px 0; /* Add vertical padding */
+    padding-top: 35px; /* Add vertical padding */
     width: 100%; /* Ensure it spans the full width */
-    margin-top: auto; /* Push the footer to the bottom */
+    height: 1px;
+    /* margin: auto; */
+    left: 0;
     font-size: 14px; /* Adjust the font size */
-    margin-bottom: -130px;
+    /* margin-bottom: -130px; */
+    margin: 0 px;
+    flex-shrink: 0; 
+    position: fixed;  /*Keeps it at the bottom of the viewport*/
+    bottom: 0;
+    left: 0;
+    z-index: 10;
 }
 
