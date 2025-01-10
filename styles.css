@@ -144,15 +144,15 @@ header {
     flex-direction: column;
     align-items: left;
     background-color: #F5F5F5; /* Light gray background */
-    flex: 1; /* This allows the middle-content to grow and take available space */
+    flex: 0; /* This allows the middle-content to grow and take available space */
     margin-left: 270px;
     gap: 10px;
-    height: 400px;
+    height: 370px;
     margin-left: 270px;
     margin-top: 83px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border-radius: 18px;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
     padding-left: 30px;
     padding-right: 30px;
     border: 1px solid #1b1a1a;
@@ -173,25 +173,54 @@ header {
     /* flex: 1; */
 
 }
-/* .divider {
+.divider {
     /* border: none;  Remove default border styling */
     /* border-top: 2px solid hsl(254, 54%, 29%);  Solid light gray line */
     /* margin: 20px 0; Add spacing above and below the line */
     /* width: 100%; Ensure it spans the full width of the container */
-    /* margin-bottom: 0%; 
+    margin-bottom: 0%; 
+    padding-bottom: -10px;
     
-} */
-/* .skills { 
+} 
+.skills { 
     height:-2px;
-    margin-top: -10px;
+    margin-top: -30px;
     padding-top: -30px;
-} */
-.skills-details ul{
-    display: flex;
-    justify-items: space-between;
-    flex-direction: row;
-    /* background-color: #aca9a5; */
 }
+.skills-details{
+    margin-bottom: 1px;
+    height: 10px;
+    padding: 0;
+}
+
+.skills-details ul {
+    list-style: none;         /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;            /* Display items in a horizontal line */
+    gap: 10px;               /* Add space between items */
+    flex-wrap: wrap;         /* Allow wrapping to next line if needed */
+}
+
+.skills-details li {
+    padding: 8px 14px;       /* Add padding inside each item */
+    border: 1px solid #ccc;  /* Light gray border */
+    border-radius: 20px;     /* Rounded corners for the pill shape */
+    background-color: #fff;  /* White background */
+    font-size: 14px;         /* Font size */
+    font-weight: 600;        /* Bold text */
+    color: #333;             /* Dark text color */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: -20px;
+}
+
+.skills-details li:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    transform: scale(1.05);    /* Slight zoom effect */
+    cursor: pointer;
+}
+
 
 /* Footer Styling */
 footer {
@@ -199,7 +228,7 @@ footer {
     /* position:absolute; */
     color: #000; /* Text color */
     text-align: center; /* Center align the text */
-    padding-top: 35px; /* Add vertical padding */
+    padding-top: 25px; /* Add vertical padding */
     width: 100%; /* Ensure it spans the full width */
     height: 1px;
     /* margin: auto; */
