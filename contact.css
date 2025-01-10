@@ -1,47 +1,232 @@
-/* Apply basic styling to the whole page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+/* Reset Styles */
+/* Header Styling */
+header {
+    position:fixed;
+    width: 100%;
+    height: 25px;
+    background-color: #aca9a5; /* Orange background */
+    color: white; /* White text color */
+    /* padding: 25px 20px; */
+    padding-top: 45px;
+    padding-bottom: 3px;
+    padding-left: 28px;
+    display: inline-flex;
+    /* flex-direction: row; */
+    /* flex-direction: row; */
+    align-items: center; /* Center title and icon vertically */
+    /* justify-content: space-between;  Space between icon and title */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+}
+
+.header-container h1 {
+    margin-top: -10px;
+    /* position: top; */
+    margin-left: 150px;
+    font-size: 20px;
+    padding-top: 0 px;
+    align-items: right;
+    padding-left: 180px;
+    padding-bottom: 35px;
+}
+.menu-icon {
+    padding-top: 100%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menu container */
+.menu-container {
+    /* width: 200px; */
+    position: fixed;
+    left: -280px;
+    background-color: #FFA500; /* Orange background */
+    color: white;
     display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 30px;
+    gap: 10px;
+    /*box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);*/
+    height: 380px;
+    margin-left: 50px;
+    margin-top: 87px;
+    margin-bottom: 60px;
+    border-radius: 18px;
+    padding-top: 60px;
+    /* top: 0; */
+    transition: left 0.3s ease; /* Smooth slide-in effect */
+}
+
+/* When Menu is Open */
+.menu-container.open {
+    left: 0; /* Slide the menu into view */
+}
+
+.menu-profile {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 6px;
+    padding-right: 0%;
+    margin-left: -5px;
+}
+
+/* Profile section */
+.menu-profile img {
+    width: 50px;
+    height: 60px;
+    object-fit: cover; /* Ensure the image doesn't stretch or distort */
+    border-radius: 10px;
+    /* border-style:inherit; */
+    /* margin-bottom: 10px; */
+    padding-top: 12px;
+    margin: 10px 0; /* Add some space above and below the image */
+}
+
+.menu-profile h2 {
+    display: inline;
+    padding-right: 0px;
+    font-size: 14px;
+    margin: 0;
+    /* text-align: top right; */
+    line-height: 15px;
+    padding-top: 42px;
+    /*height: -5px;*/
+    /*padding-bottom: 25px;*/
+}
+
+.menu {
+    align-items: right;
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+
+.menu li {
+    margin: 4px 0;
+    line-height: 35px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    /* padding: 10px; */
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #FF8C00; /* Darker orange */
+    color: white;
+    padding-left: 4px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
-/* Contact form container */
-.contact-container {
-    text-align: center;
+/* Sidebar Styling */
+.sidebar {
+    width: 220px;
+    background-color: #f2f2f2;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 350px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact heading */
-.contact-container h2 {
-    color: #FF6600;
-    letter-spacing: 2px;
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.nav-menu {
+    margin-top: 20px;
+}
+
+.nav-menu a {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: #8C4D00;
+    color: #fff;
+}
+
+.hire-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover {
+    background-color: #FB8C00;
+}
+
+/* Contact Form Section */
+.contact-section {
+    margin-left: 40px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    color: #FF9800;
+    font-weight: bold;
+    letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
-/* Subheading */
-.contact-container p {
+.contact-section p {
     font-size: 12px;
     color: #555;
     margin-bottom: 20px;
 }
 
-/* Form styling */
-.contact-form {
-    background-color: #ECEFF1;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #FFCCBC;
-}
-
-/* Labels */
+/* Contact Form Styling */
 .contact-form label {
     font-weight: bold;
     font-size: 14px;
@@ -50,7 +235,6 @@ body {
     margin-bottom: 5px;
 }
 
-/* Input fields */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -59,19 +243,17 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
-    background-color: #fff;
+    background-color: #f9f9f9;
     outline: none;
     transition: all 0.3s ease-in-out;
 }
 
-/* Focus effect on input fields */
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #FF6600;
+    border-color: #FF9800;
     box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
 }
 
-/* Submit button */
 .contact-form button {
     width: 100%;
     padding: 12px;
@@ -85,7 +267,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
 .contact-form button:hover {
     background-color: #FB8C00;
 }

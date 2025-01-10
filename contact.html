@@ -3,27 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    <!-- Addition of a header-->
+    <header>
 
-<div class="contact-container">
-    <h2>Contact</h2>
-    <p>Need my collaboration? Type a message</p>
+     <div class="header-container">
+        <span class="menu-icon" onclick="toggleMenu()">☰</span> <!-- 3-dotted icon -->
+        <h1>My Portfolio</h1>
+     </div>
+    </header>
+    <!-- <div id="menu2" class="menu-container">
+        <div class="menu-profile">
+            <img src="Assets/AnotherMe.jpg" alt="Profile Picture">
+            <h2>Wanda Guela</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div> -->
 
-    <form class="contact-form">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email" required>
+<div class="container">
 
-        <label for="mobile">Mobile</label>
-        <input type="tel" id="mobile" placeholder="Enter Mobile" required>
+    <!-- Sidebar Menu --> 
+     <div class="sidebar">
+        <div class="profile">
+            <img src="Assets/OnceMe.png" alt="Profile Picture">
+            <h3>Wanda Guela</h3>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">About</a>
+            <a href="#skills"> Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="active">Contact</a>
+        </nav>
+         <!-- <button class="hire-btn">Hire me</button> -->
+    </div> 
 
-        <label for="message">Message</label>
-        <textarea id="message" rows="4" placeholder="Enter Your Message" required></textarea>
+    <!--Contact Form Section -->
+    <div class="contact-section">
+        <h2>Contact</h2>
+        <p>Need my collaboration? Type a message</p>
 
-        <button type="submit">Submit →</button>
-    </form>
+        <form class="contact-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Please enter your email" required>
+
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" placeholder="Enter Mobile" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Enter Your Message" required></textarea>
+
+            <button type="submit">Submit →</button>
+        </form>
+    </div>
+
 </div>
 
 </body>
