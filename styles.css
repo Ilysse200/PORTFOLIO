@@ -206,7 +206,7 @@ header {
     padding: 8px 14px;       /* Add padding inside each item */
     border: 1px solid #ccc;  /* Light gray border */
     border-radius: 20px;     /* Rounded corners for the pill shape */
-    background-color: #fff;  /* White background */
+    background-color: #F5F5F5;  /* White background */
     font-size: 14px;         /* Font size */
     font-weight: 600;        /* Bold text */
     color: #333;             /* Dark text color */
