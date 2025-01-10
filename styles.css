@@ -147,12 +147,12 @@ header {
     flex: 0; /* This allows the middle-content to grow and take available space */
     margin-left: 270px;
     gap: 10px;
-    height: 370px;
+    height: 415px;
     margin-left: 270px;
-    margin-top: 83px;
+    margin-top: 80px;
     margin-bottom: 20px;
     border-radius: 18px;
-    padding-bottom: 25px;
+    padding-bottom: 33px;
     padding-left: 30px;
     padding-right: 30px;
     border: 1px solid #1b1a1a;
@@ -161,7 +161,7 @@ header {
 
 .middle-content h1 {
     padding-bottom: -4px;
-    padding-top: 20px;
+    padding-top: 15px;
     align-items: left;
     font-size: 36px;
     font-weight: bolder;
@@ -228,7 +228,8 @@ footer {
     /* position:absolute; */
     color: #000; /* Text color */
     text-align: center; /* Center align the text */
-    padding-top: 25px; /* Add vertical padding */
+    line-height: 7px;
+    padding-top: 35px; /* Add vertical padding */
     width: 100%; /* Ensure it spans the full width */
     height: 1px;
     /* margin: auto; */
@@ -242,4 +243,47 @@ footer {
     left: 0;
     z-index: 10;
 }
+
+/* Button Container to align buttons */
+.button-container {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    margin-top: 20px;
+}
+
+/* General Button Styling */
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* Yellow Button (View Projects) */
+.btn-primary {
+    background-color: #FFB800;  /* Bright yellow */
+    color: #000;                /* Black text */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ffa500;  /* Darker yellow on hover */
+    transform: scale(1.05);     /* Slight zoom effect */
+}
+
+/* White Button with Border (Get in Touch) */
+.btn-secondary {
+    background-color: #fff;     /* White background */
+    color: #000;                /* Black text */
+    border: 2px solid #ccc;     /* Light gray border */
+}
+
+.btn-secondary:hover {
+    background-color: #f0f0f0;  /* Light gray on hover */
+    transform: scale(1.05);     /* Slight zoom effect */
+}
+
 
