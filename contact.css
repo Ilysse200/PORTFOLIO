@@ -81,12 +81,12 @@ header {
 /* Profile section */
 .menu-profile img {
     width: 50px;
-    height: 60px;
+    height: 75px;
     object-fit: cover; /* Ensure the image doesn't stretch or distort */
     border-radius: 10px;
     /* border-style:inherit; */
     /* margin-bottom: 10px; */
-    padding-top: 12px;
+    padding-top: 15px;
     margin: 10px 0; /* Add some space above and below the image */
 }
 
