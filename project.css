@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:DM Serif Display;
     background-color: #F5F5F5;
     color: #000;
     margin: 0;
@@ -184,3 +184,27 @@ header {
     text-decoration: none;
     border-radius: 5px;
         }
+/* Footer Styling */
+footer {
+    background-color: #aca9a5; /* Light gray background */
+    /* position:absolute; */
+    color: #000; /* Text color */
+    font-size: 10px;
+    text-align: center; /* Center align the text */
+    line-height: 7px;
+    padding-top: 23px; /* Add vertical padding */
+    padding-bottom: 12px;
+    width: 100%; /* Ensure it spans the full width */
+    /* height: 1px; */
+    line-height: 1px;
+    /* margin: auto; */
+    left: 0;
+    font-size: 14px; /* Adjust the font size */
+    /* margin-bottom: -130px; */
+    margin: 0 px;
+    flex-shrink: 0; 
+    position: fixed;  /*Keeps it at the bottom of the viewport*/
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
