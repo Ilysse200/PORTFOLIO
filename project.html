@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+     <!-- Addition of a header-->
+     <header>
+        <div class="header-container">
+           <span class="menu-icon" onclick="toggleMenu()">☰</span> <!-- 3-dotted icon -->
+           <h1>My Portfolio</h1>
+        </div>
+       </header>
+       <div id="menu" class="menu-container">
+           <div class="menu-profile">
+               <img src="Assets/AnotherMe.jpg" alt="Profile Picture">
+               <h2>Wanda Guela</h2>
+           </div>
+           <ul class="menu">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="index.html">Skills</a></li>
+               <li><a href="project.html">Projects</a></li>
+               <li><a href="contact.html" class="active">Contact</a></li>
+           </ul>
+       </div>
+    <h1>My Projects</h1>
+    <div class="projects-container" id="projectsContainer">
+        <div class="project-card">
+            <img src="Assets/medical-equipment.jpg" alt="Medical AI">
+            <div class="project-title">Medical AI</div>
+            <div class="project-description">
+                I participated in a project called 'Medical AI' which aimed to predict the likelihood of a patient having PCOS based on their symptoms.
+            </div>
+            <a href="https://github.com/Ilysse200/PCOS_detection_System" class="read-more-btn" target="_blank">Read More</a>
+        </div>
+        <div class="project-card">
+            <img src="Assets/pets.jpeg" alt="PetClinic App">
+            <div class="project-title">PetClinic App</div>
+            <div class="project-description">
+                I built the Pet Clinic Management System using Java, Spring Boot, MySQL, and Thymeleaf to streamline clinic operations.
+            </div>
+            <a href="https://github.com/Ilysse200/23607PetClinicApp" class="read-more-btn" target="_blank">Read More</a>
+        </div>
+        <div class="project-card">
+            <img src="Assets/locationApp-removebg-preview.png" alt="LocationApp">
+            <div class="project-title">LocationApp</div>
+            <div class="project-description">
+                I created LocationApp using Dart and Google API to track user locations in real-time, highlighting API integration skills.
+            </div>
+            <a href="https://github.com/Ilysse200/23607_LocationApp" class="read-more-btn" target="_blank">Read More</a>
+        </div>
+        <div class="project-card">
+            <img src="Assets/f3a400ed31526869fb305cebfae9bd3a.jpg" alt="Movie Site">
+            <div class="project-title">Movie Site</div>
+            <div class="project-description">
+                This Java RMI project uses Hibernate and Java Frames to manage movie databases with Admin and User roles.
+            </div>
+            <a href="https://github.com/Ilysse200/JAVAMOVIEINFOSITE" class="read-more-btn" target="_blank">Read More</a>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('projectsContainer');
+        window.addEventListener('wheel', (e) => {
+            if (e.deltaY !== 0) {
+                e.preventDefault();
+                container.scrollLeft += e.deltaY;
+            }
+        });
+    </script>
+    <script src="header.js"></script> 
+</body>
+</html>
