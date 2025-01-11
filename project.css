@@ -138,7 +138,7 @@ header {
     color: white;
     padding-left: 4px
 }
-.menu a.choice {
+.menu a.active {
     background-color: #8C4D00; /* Darker orange */
     color: white;
     padding-left: 4px
