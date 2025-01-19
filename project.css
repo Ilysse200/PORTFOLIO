@@ -192,8 +192,8 @@ footer {
     font-size: 10px;
     text-align: center; /* Center align the text */
     line-height: 7px;
-    padding-top: 23px; /* Add vertical padding */
-    padding-bottom: 12px;
+    padding-top: 8px; /* Add vertical padding */
+    padding-bottom: 6px;
     width: 100%; /* Ensure it spans the full width */
     /* height: 1px; */
     line-height: 1px;
@@ -202,9 +202,23 @@ footer {
     font-size: 14px; /* Adjust the font size */
     /* margin-bottom: -130px; */
     margin: 0 px;
+    height: 57px;
     flex-shrink: 0; 
     position: fixed;  /*Keeps it at the bottom of the viewport*/
     bottom: 0;
     left: 0;
     z-index: 10;
+}
+.footer-icons a{
+    margin: 0 10px; 
+    padding-bottom: 1px;
+    color: #FB470F;
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+.footer-copyright{
+    padding-top: 4px;
+    font-family: DM Serif Display;
+    font-size: 12px;
+    padding-bottom: 1px;
 }
