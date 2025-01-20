@@ -324,3 +324,109 @@ footer {
     font-size: 12px;
     padding-top: 16px;
 }
+
+/* Add this at the end of contact.css */
+
+/* Media Queries for Tablet Screens (768px and smaller) */
+@media (max-width: 768px) {
+    /* Responsive styles for tablets */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .header-container h1 {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .contact-section {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
+
+/* Media Queries for Mobile Screens (480px and smaller) */
+@media (max-width: 480px) {
+    /* Responsive styles for mobile */
+    header {
+        padding: 10px;
+    }
+
+    .header-container h1 {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    .contact-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 480px) {
+    /* Header */
+    header {
+      padding: 10px;
+    }
+  
+    .header-container h1 {
+      font-size: 16px;
+      margin-left: 0;
+      padding: 5px 0;
+    }
+  
+    .menu-icon {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    /* Menu container */
+    .menu-container {
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+    }
+  
+    .menu-profile img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .menu-profile h2 {
+      font-size: 12px;
+    }
+  
+    /* Contact Section */
+    .contact-section {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .contact-section h2 {
+      font-size: 24px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 12px;
+    }
+  
+    /* Footer */
+    footer {
+      font-size: 8px;
+      padding: 5px;
+    }
+  
+    .footer-icons a {
+      font-size: 10px;
+    }
+  }
+  

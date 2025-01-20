@@ -265,3 +265,90 @@ footer {
     padding-bottom: 1px;
 }
 
+/* Media Queries for Responsive Design */
+
+/* Small Devices (Phones, <600px) */
+@media (max-width: 600px) {
+    .header-container h1 {
+        margin-left: 20px;
+        font-size: 16px;
+        padding-left: 0;
+    }
+
+    .menu-container {
+        width: 100%;
+        left: -100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu-container.open {
+        left: 0;
+    }
+
+    .middle-content {
+        margin-left: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Medium Devices (Tablets, 600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .header-container h1 {
+        font-size: 18px;
+        margin-left: 50px;
+    }
+
+    .menu-container {
+        width: 300px;
+        height: auto;
+    }
+
+    .middle-content {
+        margin-left: 50px;
+        padding: 20px;
+        width: auto;
+    }
+
+    .services-container {
+        flex-wrap: wrap;
+    }
+
+    .service-card {
+        width: 45%;
+    }
+}
+
+/* Large Devices (Laptops and Desktops, >768px) */
+@media (min-width: 768px) {
+    .header-container h1 {
+        font-size: 20px;
+    }
+
+    .menu-container {
+        width: 250px;
+        height: 350px;
+    }
+
+    .services-container {
+        justify-content: space-around;
+    }
+
+    .service-card {
+        width: 300px;
+    }
+}
